@@ -10,14 +10,14 @@ const HomePage = () => {
     const timer = setTimeout(() => {
       setLoading(false);
       navigate({ to: "/welcome-first" });
-    }, 10000);
+    }, 100000);
 
     return () => clearTimeout(timer);
   }, [navigate]);
 
   return (
     <div className="home-container">
-      <div className="content">
+      <div className="content-home">
         <h1>PROTRADE COMMUNITY</h1>
         <div className="container-loader">
           {loading && <div className="loader"></div>}
