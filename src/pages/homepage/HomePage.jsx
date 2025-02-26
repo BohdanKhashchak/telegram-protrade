@@ -10,7 +10,7 @@ const HomePage = () => {
     const timer = setTimeout(() => {
       setLoading(false);
       navigate({ to: "/welcome-first" });
-    }, 100000);
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, [navigate]);
