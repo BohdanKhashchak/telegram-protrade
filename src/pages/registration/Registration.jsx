@@ -1,14 +1,17 @@
 // import React, { useState, useEffect } from "react";
 import { LinkComponent } from "../../components/LinkComponent";
 import SmallPagination from "../../components/SmallPagination";
+import CustomVideoPlayer from "../../components/VideoPlayer";
 import "./Registration.css";
 
 const RegistrationPage = () => {
   return (
     <div className="registration-container">
-      <div className="content">
+      <div className="content-registration">
         <div className="video-container video-container-registration">
-          <div className="placeholder-video"></div>
+          {/* <div className="placeholder-video"> */}
+          <CustomVideoPlayer />
+          {/* </div> */}
           <h2>Реєстрація на платформі</h2>
           <p>
             На даному етапі потрібно створити аккаунт на платформі брокера, для

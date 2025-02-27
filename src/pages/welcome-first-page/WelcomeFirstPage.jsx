@@ -1,6 +1,8 @@
 // import React, { useState, useEffect } from "react";
 import { LinkComponent } from "../../components/LinkComponent";
 import SmallPagination from "../../components/SmallPagination";
+import CustomVideoPlayer from "../../components/VideoPlayer";
+import VideoPlayer from "../../components/VideoPlayer";
 import "./WelcomeFirstPage.css";
 
 const WelcomeFirstPage = () => {
@@ -8,7 +10,9 @@ const WelcomeFirstPage = () => {
     <div className="welcomepage-container">
       <div className="content">
         <div className="video-container">
-          <div className="placeholder-video"></div>
+          <div className="placeholder-video">
+            <CustomVideoPlayer />
+          </div>
           <h2>Вступний урок</h2>
           <h2>№1</h2>
           <p>

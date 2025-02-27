@@ -1,15 +1,17 @@
 // import React, { useState, useEffect } from "react";
 import { LinkComponent } from "../../components/LinkComponent";
 import SmallPagination from "../../components/SmallPagination";
+import CustomVideoPlayer from "../../components/VideoPlayer";
 import "./WelcomeSecondPage.css";
-import { Link } from "@tanstack/react-router";
 
 const WelcomeSecondPage = () => {
   return (
     <div className="welcomepage-container">
       <div className="content">
         <div className="video-container">
-          <div className="placeholder-video"></div>
+          <div className="placeholder-video">
+            <CustomVideoPlayer />
+          </div>
           <h2>Вступний урок</h2>
           <h2>№2</h2>
           <p>

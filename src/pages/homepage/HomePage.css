@@ -41,7 +41,7 @@
   }
 }
 
-h1 {
+.content-home h1 {
   font-size: 40px;
   background: linear-gradient(
     90deg,

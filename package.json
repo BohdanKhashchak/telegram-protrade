@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@graphland/react-video-player": "^0.1.14",
     "@tanstack/react-router": "^1.111.11",
     "@telegram-apps/sdk": "^3.5.0",
     "react": "^19.0.0",
