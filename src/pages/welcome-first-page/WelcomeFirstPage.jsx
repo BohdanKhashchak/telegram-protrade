@@ -2,7 +2,6 @@
 import { LinkComponent } from "../../components/LinkComponent";
 import SmallPagination from "../../components/SmallPagination";
 import CustomVideoPlayer from "../../components/VideoPlayer";
-import VideoPlayer from "../../components/VideoPlayer";
 import "./WelcomeFirstPage.css";
 
 const WelcomeFirstPage = () => {

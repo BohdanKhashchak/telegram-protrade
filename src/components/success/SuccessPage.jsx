@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
-import "./RegistrationSuccessPage.css";
+import "./SuccessPage.css";
 import { Link } from "@tanstack/react-router";
 
-const RegistrationSuccessPage = () => {
+const SuccessPage = ({ text, rightAnswers, linkUrl }) => {
   return (
-    <div className="register-success-container">
-      <div className="content-success-register">
+    <div className="success-container">
+      <div className="content-success">
         <div>
           <svg
             width="127"
@@ -29,9 +29,10 @@ const RegistrationSuccessPage = () => {
             />
           </svg>
 
-          <h1>Реєстрація успішна</h1>
+          <h1>{text}</h1>
+          {rightAnswers && <p>{rightAnswers}/10</p>}
         </div>
-        <Link to="/welcome-first" className="link-button-continue">
+        <Link to={linkUrl} className="link-button-continue">
           Продовжити
         </Link>
       </div>
@@ -39,4 +40,4 @@ const RegistrationSuccessPage = () => {
   );
 };
 
-export default RegistrationSuccessPage;
+export default SuccessPage;

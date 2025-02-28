@@ -1,34 +1,27 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import App from "./App.jsx";
 
+const initializeTelegramWebApp = () => {
+  if (window.Telegram && window.Telegram.WebApp) {
+    window.Telegram.WebApp.ready();
 
-import { init, miniApp } from '@telegram-apps/sdk';
+    const user = window.Telegram.WebApp.initDataUnsafe;
+    const userId = user?.user?.id;
 
-
-const initializeTelegramSDK = async () => {
-  try {
-    await init();
-
-
-    if (miniApp.ready.isAvailable()) {
-      await miniApp.ready();
-      console.log('Mini App ready');
+    if (userId) {
+      localStorage.setItem("user_id", userId);
     }
-
-
-  } catch (error) {
-    console.error('Error initializing Telegram SDK', error);
+  } else {
+    console.error("No user data available.");
   }
 };
 
+initializeTelegramWebApp();
 
-initializeTelegramSDK();
-
-
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById("root")).render(
   <StrictMode>
     <App />
-  </StrictMode>,
-)
+  </StrictMode>
+);

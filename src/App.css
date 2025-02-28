@@ -81,6 +81,35 @@
   border-radius: 4px;
 }
 
+.link-pro {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  display: flex;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  height: 59px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link-lesson {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  display: flex;
+  text-align: center;
+  text-decoration: none;
+  color: #ffcc00;
+  height: 59px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .video-js {
   width: 100%;
   border-radius: 24px;
@@ -90,4 +119,51 @@
 .video-js .vjs-tech {
   border-radius: 24px;
   border: 1px solid #eef4c2;
+}
+
+.vjs-fullscreen-control span {
+  width: 40px;
+}
+
+.link-button-continue {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: left;
+  font-weight: 300;
+  height: 56px;
+  width: 100%;
+  background-color: #ffcc00;
+  border-radius: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.answer-button {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: left;
+  font-weight: 300;
+  height: 56px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 1px solid #fff;
+  width: 246px;
+}
+
+.answer-button.right {
+  border: 1px solid #00ff04;
+}
+
+.answer-button.wrong {
+  border: 1px solid #ff0000;
 }

@@ -1,4 +1,3 @@
-// import React, { useState, useEffect } from "react";
 import { LinkComponent } from "../../components/LinkComponent";
 import SmallPagination from "../../components/SmallPagination";
 import CustomVideoPlayer from "../../components/VideoPlayer";
@@ -9,9 +8,7 @@ const RegistrationPage = () => {
     <div className="registration-container">
       <div className="content-registration">
         <div className="video-container video-container-registration">
-          {/* <div className="placeholder-video"> */}
           <CustomVideoPlayer />
-          {/* </div> */}
           <h2>Реєстрація на платформі</h2>
           <p>
             На даному етапі потрібно створити аккаунт на платформі брокера, для
@@ -19,7 +16,7 @@ const RegistrationPage = () => {
             інструкцію як зареєструватись
           </p>
           <LinkComponent
-            to="/signup"
+            to="/check-sign-up"
             className="link-register"
             svgColor={"#fff"}
           >
@@ -29,7 +26,7 @@ const RegistrationPage = () => {
         <div className="link-container">
           <SmallPagination activeFirst={false} activeThird={true} />
           <LinkComponent
-            to="/registration-succuss"
+            to="/check-sign-up"
             className="link-checkup"
             svgColor={"#ffcc00"}
           >

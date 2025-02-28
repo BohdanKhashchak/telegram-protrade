@@ -1,0 +1,197 @@
+.first-materials-container {
+  height: 100vh;
+  background-color: black;
+  width: 100%;
+  font-family: "Unbounded", serif;
+}
+
+.first-materiasl-content {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.first-materials-container h4 {
+  font-size: 20px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 204, 0, 1) 0%,
+    rgba(255, 255, 255, 1) 80%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  line-height: 30px;
+  margin-bottom: 8px;
+}
+
+.check-singup-container p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+
+.lessons {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.details-block {
+  display: flex;
+  flex-direction: row;
+  margin-top: 16px;
+  gap: 8px;
+}
+
+.details-block span {
+  background-color: transparent;
+  font-size: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+  align-items: center;
+  border-radius: 36px;
+  line-height: 21px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border: 1px solid #ffcc00;
+  color: #ffcc00;
+}
+
+.user-on-lessons {
+  font-size: 12px;
+  line-height: 21px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 26px;
+  gap: 5px;
+}
+
+.lessons-description {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 21px;
+  margin-top: 20px;
+}
+
+.title-studing {
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffcc00;
+}
+
+.lesson-accordion {
+  margin-bottom: 12px;
+}
+
+.lesson-title {
+  width: 100%;
+  padding: 16px;
+  background-color: #ffffffb2;
+  color: #161616;
+  font-size: 16px;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 24px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  height: 81px;
+  font-family: "Unbounded", serif;
+}
+
+.activeTitle {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.lesson-title div {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  gap: 5px;
+}
+
+.lesson-title div:nth-child(1) {
+  justify-content: space-between;
+}
+
+.lesson-title div:nth-child(2) {
+  color: #616161;
+  font-size: 12px;
+}
+
+.lesson-title:hover {
+  background-color: #ffcc00;
+}
+
+.accordion-icon {
+  transition: transform 0.3s ease;
+}
+
+.accordion-icon.rotated {
+  transform: rotate(180deg);
+}
+
+.lesson-details {
+  padding: 16px;
+  padding-top: 0;
+  background-color: #ffcc00;
+  border-bottom-right-radius: 24px;
+  border-bottom-left-radius: 24px;
+}
+
+.lesson-details hr {
+  margin: 0;
+  border: none;
+  height: 1px;
+  background-color: #b8b8b8;
+}
+
+.take-exercise {
+  background: #161616;
+  color: #f9f9f9;
+  height: 40px;
+  width: 100%;
+  border-radius: 36px;
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+.lesson-play {
+  background-color: transparent;
+  border: none;
+  font-family: "Unbounded", serif;
+  color: #161616;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.lesson-play div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: left;
+  font-size: 12px;
+}
+
+.lesson-play div p {
+  margin: 0;
+}
+
+.lesson-time {
+  color: #9e9e9e;
+}

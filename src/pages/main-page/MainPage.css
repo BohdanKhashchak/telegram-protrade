@@ -1,0 +1,52 @@
+.main-container {
+  background-color: #000;
+  height: 100vh;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.user {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user h4 {
+  font-size: 18px;
+  line-height: 27px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 204, 0, 1) 0%,
+    rgba(255, 255, 255, 1) 80%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+
+.user p {
+  font-size: 12px;
+  line-height: 21px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 204, 0, 1) 0%,
+    rgba(255, 255, 255, 1) 80%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+
+.main-content {
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 31px;
+  margin-top: 20px;
+}
+
+.materials {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

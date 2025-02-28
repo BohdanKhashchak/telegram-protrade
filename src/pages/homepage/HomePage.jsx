@@ -9,18 +9,23 @@ const HomePage = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-      navigate({ to: "/welcome-first" });
     }, 2000);
 
     return () => clearTimeout(timer);
-  }, [navigate]);
+  }, []);
+
+  useEffect(() => {
+    if (!loading) {
+      navigate({ to: "/welcome-first" });
+    }
+  }, [loading, navigate]);
 
   return (
     <div className="home-container">
       <div className="content-home">
         <h1>PROTRADE COMMUNITY</h1>
         <div className="container-loader">
-          {loading && <div className="loader"></div>}
+          <div className="loader"></div>
         </div>
       </div>
     </div>
